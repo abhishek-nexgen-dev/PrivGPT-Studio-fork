@@ -29,55 +29,81 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Layout>
-        {/* Rest of your component remains exactly the same */}
-        {/* Hero Section */}
-        <section className="py-20 px-4">
-          <div className="container mx-auto text-center">
-            <Badge variant="secondary" className="mb-4">
-              🚀 Now supporting local AI models
-            </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              PrivGPT Studio
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Experience the future of AI conversations with both cloud-powered
-              Gemini and privacy-focused local models
-            </p>
-            <Link href="/chat">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Start for Free
-              </Button>
-            </Link>
+      
+        <div className="Hero_Sec relative w-screen h-screen overflow-hidden">
+      
+          <div
+            className="absolute inset-0 bg-cover bg-center z-0"
+            style={{
+              backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feducraft.tech%2Fwp-content%2Fuploads%2F2024%2F05%2FAI-Image-Generation-Formula-Thumbnail-Educraft-1.jpg&f=1&nofb=1&ipt=44b5b35dd4dde490b14fc76e88d56b55e4b231807dc1e37e01856eecfeb6c318')",
+              height: "100%",
+              width: "100%",
+            }}
+          >
+          
+            <div className="absolute inset-0 bg-black/40 dark:bg-black/60 backdrop-blur-none" />
           </div>
-        </section>
 
-        {/* Key Stats */}
-        <section className="py-16 px-4 bg-muted/50">
-          <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50K+</div>
-                <div className="text-muted-foreground">Active Users</div>
+
+          <section className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="mb-4 inline-block">
+                <Badge
+                  variant="secondary"
+                  className="bg-white text-black dark:bg-black/40 dark:text-white text-2"
+                >
+                  🚀 Now supporting local AI models
+                </Badge>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  99.9%
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+                PrivGPT Studio
+              </h1>
+              <p className="text-lg md:text-2xl text-white/70 dark:text-white/80 mb-8">
+                Experience the future of AI conversations with both
+                cloud-powered Gemini and privacy-focused local models.
+              </p>
+              <Link href="/chat">
+                <Button size="lg" className="text-lg px-8 py-6 bg-gray-600 hover:bg-gray-700 text-white dark:bg-[#393939] dark:text-white">
+                  Start for Free
+                </Button>
+              </Link>
+            </div>
+          </section>
+
+       
+          <section className="absolute bottom-0 w-full px-4 py-8 bg-white/30 dark:bg-black/50 backdrop-blur-md">
+            <div className="container mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-black dark:text-white">
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    50K+
+                  </div>
+                  <div className="text-sm opacity-80">Active Users</div>
                 </div>
-                <div className="text-muted-foreground">Uptime</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">15+</div>
-                <div className="text-muted-foreground">Supported Models</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <div className="text-muted-foreground">Support</div>
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    99.9%
+                  </div>
+                  <div className="text-sm opacity-80">Uptime</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    15+
+                  </div>
+                  <div className="text-sm opacity-80">Supported Models</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    24/7
+                  </div>
+                  <div className="text-sm opacity-80">Support</div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        {/* How It Works */}
+    
         <section className="py-16 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
@@ -118,7 +144,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Feature Comparison */}
         <section className="py-16 px-4 bg-muted/50">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
@@ -193,7 +218,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Testimonials */}
         <section className="py-16 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
