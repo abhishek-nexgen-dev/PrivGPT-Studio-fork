@@ -35,9 +35,13 @@ export default function HomePage() {
           <div
             className="absolute inset-0 bg-cover bg-center z-0"
             style={{
-              backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feducraft.tech%2Fwp-content%2Fuploads%2F2024%2F05%2FAI-Image-Generation-Formula-Thumbnail-Educraft-1.jpg&f=1&nofb=1&ipt=44b5b35dd4dde490b14fc76e88d56b55e4b231807dc1e37e01856eecfeb6c318')",
-              height: "100%",
+              backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets-global.website-files.com%2F640f59825ad6d8a9545240ba%2F662014a951b45e893d423eb9_A%2520modern%2520office%2520scenario%2520featuring%2520a%2520robot%2520and%2520a%2520man.png&f=1&nofb=1&ipt=5e49f0c8b23892d1a98fe199660f2ffcfc204429553db8a7aca6ed9aba036f3c')",
+              contain: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
               width: "100%",
+              height: "100%",
             }}
           >
           
